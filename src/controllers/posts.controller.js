@@ -1,5 +1,4 @@
-import { PrismaClientUnknownRequestError } from "@prisma/client/runtime/client";
-import { prisma } from "../config/prisma.client";
+import { prisma } from "../config/prisma.client.js";
 
 export const createPost = async (req, res) => {
   const { title, content, category, tags } = req.body;
